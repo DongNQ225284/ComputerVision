@@ -2,9 +2,9 @@ import os
 import cv2
 import sys
 
-base_path = os.path.dirname(os.path.abspath(__file__))
-modelFile = os.path.join(base_path, "models/caffemodel/deploy.prototxt")
-configFile = os.path.join(base_path, "models/caffemodel/res10_300x300_ssd_iter_140000_fp16.caffemodel")
+base_path  = os.path.dirname(os.path.abspath(__file__))
+modelFile  = os.path.join(base_path, "models/res10_ssd_face_model/deploy.prototxt")
+configFile = os.path.join(base_path, "models/res10_ssd_face_model/res10_300x300_ssd_iter_140000_fp16.caffemodel")
 
 s = 0
 if len(sys.argv) > 1:

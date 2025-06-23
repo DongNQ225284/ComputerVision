@@ -14,10 +14,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 base_path = os.path.dirname(os.path.abspath(__file__))
-classFile = os.path.join(base_path, "models/cocomodel/coco_class_labels.txt")
+classFile = os.path.join(base_path, "models/ssd_mobilenet_v2_coco/coco_class_labels.txt")
 # Đọc mô hình Tensorflow
-modelFile  = os.path.join(base_path, "models/cocomodel/models/ssd_mobilenet_v2_coco_2018_03_29", "frozen_inference_graph.pb")
-configFile = os.path.join(base_path, "models/cocomodel/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt")
+modelFile  = os.path.join(base_path, "models/ssd_mobilenet_v2_coco/frozen_inference_graph.pb")
+configFile = os.path.join(base_path, "models/ssd_mobilenet_v2_coco/ssd_mobilenet_v2_coco_2018_03_29.pbtxt")
 
 # Kiểm tra tính hợp lệ
 with open(classFile) as fp:
